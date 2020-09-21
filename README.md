@@ -8,9 +8,11 @@ googleformは組織内のみの閲覧に指定されていたので、具体的�
  + chromedriver-binary 85の最新版
  + select
  + (aws ec2 ： amazon linux2)
+ + time
 
 ###### 入力内容
  + その日の体温(整数部)        　   -> select tagを使わず、div tagとspan tagで作成された選択形式
  + その日の体温(書数点以下1桁)      -> select tagを使わず、div tagとspan tagで作成された選択形式
  + 前日との体調に差があるか         -> select tagを使わず、div tagとspan tagで作成された選択形式(idに指定あり)
 
+head_lessモードではchromedriver-binaryのsend_keysがうまく動かなかった(理由不明、過去バージョンで動いている記事はあったがchromeのversion的に動作しなかった)ため、driver.execute_scriptを使用しjavaを起動した。
