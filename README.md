@@ -16,3 +16,4 @@ googleformは組織内のみの閲覧に指定されていたので、具体的�
  + 前日との体調に差があるか         -> select tagを使わず、div tagとspan tagで作成された選択形式(idに指定あり)
 
 head_lessモードではchromedriver-binaryのsend_keysがうまく動かなかった(理由不明、過去バージョンで動いている記事はあったがchromeのversion的に動作しなかった)ため、driver.execute_scriptを使用しjavaを起動した。
+awsのec2にコードを載せて、crontabで所定の時間で実行させています。
